@@ -1,0 +1,22 @@
+---
+description: Ensure ESP-IDF idf.py is invoked via the ESP-IDF v6.0 venv Python.
+alwaysApply: true
+---
+
+# ESP-IDF: always run `idf.py` via pinned venv Python
+
+When you need to run ESP-IDF's `idf.py`, **do not execute `idf.py` directly** and do not rely on `python`/`python3` from PATH.
+
+Always invoke it exactly like this:
+
+```bash
+/Users/truong-d/.espressif/tools/python/v6.0/venv/bin/python /Users/truong-d/.espressif/v6.0/esp-idf/tools/idf.py <idf-args...>
+```
+
+Examples:
+
+```bash
+/Users/truong-d/.espressif/tools/python/v6.0/venv/bin/python /Users/truong-d/.espressif/v6.0/esp-idf/tools/idf.py build
+/Users/truong-d/.espressif/tools/python/v6.0/venv/bin/python /Users/truong-d/.espressif/v6.0/esp-idf/tools/idf.py -p /dev/tty.usbserial-XXXX flash monitor
+```
+

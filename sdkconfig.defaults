@@ -1,0 +1,8 @@
+# Enable BLE (NimBLE) stack
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+CONFIG_BT_NIMBLE_ROLE_PERIPHERAL=y
+
+# FreeRTOS / system defaults are fine; keep logs readable
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
