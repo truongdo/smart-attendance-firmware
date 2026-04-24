@@ -1,3 +1,8 @@
+# Project git repos
+- git@github.com:truongdo/fsi-chamcong.git - admin/web user app
+- git@github.com:truongdo/smart-attendance-firmware.git - firmware
+- git@github.com:truongdo/smart-attendance-app.git - react native app
+
 # Smart Attendance ESP32 (ESP-IDF) — BLE Base Project
 
 This is a minimal **Espressif ESP-IDF** project that boots an ESP32 as a **BLE peripheral**:
@@ -17,7 +22,7 @@ This is a minimal **Espressif ESP-IDF** project that boots an ESP32 as a **BLE p
 idf.py set-target esp32
 idf.py build
 idf.py merge-bin
-idf.py -p /dev/tty.usbserial-XXXX flash monitor
+idf.py -p /dev/tty.usbserial-XXXX flash monitor # or simply idf.py flash
 # esptool.py write_flash 0x0 build/merged-binary.bin
 
 ```
